@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <title>NERV</title>
+
+  <!--aggiungo bootstrap, javascript-->
+
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <!--CSS-->
+
+  <link rel="stylesheet" href="style.css">
+
+  <!--ICONE-->
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--FAVICON-->
+  <link rel="icon" type="image/png" href="./immagini/NERV_logo-PhotoRoom.png-PhotoRoom.png">
+
+</head>
+
+<!--SFONDO/GIF/RIQUADRI-->
+
+<body>
+
+  <video autoplay muted loop id="myVideo">
+    <source src="./red.mp4" type="video/mp4">
+  </video>
+
+
+
+  <div>
+    <img src="immagini/allarme.gif" style="width: 100%; height: 450px;">
+  </div>
+  <div style="background-color: rgb(19, 19, 19);
+  border-top: solid 10px; border-bottom: solid 10px ; border-color: rgb(250, 32, 8) ; z-index: 9999;">
+    <marquee style="font-size: 80px; font-family:Impact;
+    color: rgb(216, 64, 30);">
+      CAUTION 危険 - ANGEL ATTACK - CAUTION 危険 - ANGEL ATTACK - CAUTION 危険 - ANGEL ATTACK -
+    </marquee>
+  </div>
+
+
+
+  <!--NAVBAR-->
+  <div style=" bottom: 35px;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+      style="height: 85px; padding-left: 200px; font-family: 'Times New Roman'; margin-left: 0px;">
+
+      <a style="font-size: 25px;color: rgb(216, 64, 30); text-decoration: none;"
+        onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'"
+        class="navbar-brand" href="index.html">HOME</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a style="font-size: 25px; color: rgb(216, 64, 30)" class="nav-link" href="Eva.html">EVANGELION<span
+                class="sr-only"></span></a>
+          </li>
+          
+          <li class="nav-item">
+            <a style="font-size: 25px;color: rgb(216, 64, 30)" class="nav-link" href="contatti.html">CONTATTI</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!--VIDEO SFONDO BACKGROUND-->
+
+  <video autoplay muted loop id="myVideo">
+    <source src="red.mp4" type="video/mp4">
+  </video>
+
+  <!--COLLEGAMENTI INTERNI ALLA PAGINA-->
+
+  <div class="sidebar">
+
+    <img src="immagini/seele-PhotoRoom.png-PhotoRoom.png" alt="ss" width="90px">
+    <span style="font-size: 50px;" class="material-symbols-outlined">search</span>
+
+    <ul style="list-style: none; padding: 0; margin: 0; margin-bottom: 120px;">
+      <li style="margin-bottom: 20px;"><a style="color: rgb(216, 64, 30); text-decoration: none;" class="no-underline"
+          href="#nervhome">Nerv</a></li>
+      <li style="margin-bottom: 20px;"><a style="color: rgb(216, 64, 30); text-decoration: none;" class="no-underline"
+          href="#forzanerv">La forza della Nerv</a></li>
+      <li style="margin-bottom: 20px;"><a style="color: rgb(216, 64, 30); text-decoration: none;" class="no-underline"
+          href="#nerv">Chi è la Nerv</a></li>
+      <li style="margin-bottom: 20px;"><a style="color: rgb(216, 64, 30); text-decoration: none;" class="no-underline"
+          href="#gendo">Gendo Ikari</a></li>
+      <li style="margin-bottom: 20px;"><a style="color: rgb(216, 64, 30); text-decoration: none;" class="no-underline"
+          href="#kozo">Kōzō Fuyutsuki</a></li>
+      <li style="margin-bottom: 20px;"><a style="color: rgb(216, 64, 30); text-decoration: none;" class="no-underline"
+          href="#misato">Misato Katsuragi</a></li>
+      <li style="margin-bottom: 20px;"><a style="color: rgb(216, 64, 30); text-decoration: none;" class="no-underline"
+          href="#ritsuko">Ritsuko Akagi</a></li>
+      <li style="margin-bottom: 20px;"><a style="color: rgb(216, 64, 30); text-decoration: none;" class="no-underline"
+          href="#ryoji">Ryōji Kaji</a></li>
+      <li style="margin-bottom: 20px;"><a style="color: rgb(216, 64, 30); text-decoration: none;" class="no-underline"
+          href="#shigeru">Shigeru Aoba</a></li>
+      <li style="margin-bottom: 20px;"><a style="color: rgb(216, 64, 30); text-decoration: none;" class="no-underline"
+          href="#makoto">Makoto Hyūga</a></li>
+      <li><a style="color: rgb(216, 64, 30); text-decoration: none;" class="no-underline" href="#maya">Maya Ibuki</a>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+  <!--INFORMAZIONI HOME-->
+
+  <div id="nervhome" class="testogrande">
+    Nerv
+    <hr>
+  </div>
+
+
+  <div class="testopiccolo">
+
+    <div class="container">
+      <p> Benvenuto nel sito ufficiale della Nerv.
+        In questa sito troverai tutte le informazioni che hai sempre voluto e mai avuto.
+        Chi (Cosa) sono gli Eva (Evangelion), i children e il loro legame con l'Eva,
+        i famosi "Impact", gli "Angeli", Lilith e Adam.
+        P.S. Se riesci a leggere tutto e sei vivo, vuol dire che ancora non ti hanno ucciso...</p>
+    </div>
+  </div>
+
+  <!--VIDEO PRESENTAZIONE-->
+
+  <div id="forzanerv" class="testomedio" style="margin-top: 50px;">
+
+    La forza della Nerv
+    <hr>
+  </div>
+
+  <div class="testopiccolo">
+
+    <div class="container">
+      <p> Breve video registrato durante uno scontro con un Angelo. Il pilota, Shinji Ikari, ha dimostrato una notevole
+        sincronizzazione con
+        l'unita Evangelion-01. Sicuramente ha a che vedere con Yui Ikari, ossia, la madre del pilota...</p>
+    </div>
+  </div>
+
+
+
+  <div style="margin-top: 50px;">
+    <video style="padding: 0 28%; " controls>
+
+      <source src="Video Evangelion.mp4" type="video/mp4">
+      <source src="Video Evangelion.mp4" type="video/webm">
+
+
+
+    </video>
+  </div>
+
+
+  <div class="testopiccolo" style="margin-top: 20px;">
+
+    <div class="container">
+      <p>Puoi scaricare il video da qui:
+        <a class="no-underline" style="color:rgb(216, 64, 30);" href="Video Evangelion.mp4" download>Scarica il
+          video</a>
+      </p>
+    </div>
+  </div>
+
+
+
+  <!--CHI E' LA NERV-->
+
+  <div id="nerv" class="testomedio" style="margin-top: 50px;">
+    Chi è la Nerv?
+    <hr>
+  </div>
+
+  <div style="margin-top: 50px;">
+    <center><img src="immagini/NERV_logo-PhotoRoom.png-PhotoRoom.png" alt="nerv.logo" width="300px" height="auto">
+    </center>
+  </div>
+
+
+  <div class="testopiccolo" style="margin-top: 50px;">
+    <div class="container">
+
+      <p>La NERV è una organizzazione internazionale con il proprio centro operativo situato nella città di Tokyo-3 , in
+        Giappone.</p>
+
+      <p>Più specificamente, gestiscono la maggior parte delle loro ricerche e operazioni dal quartier generale della
+        NERV,
+        una grande struttura situata nel GeoFront.
+        Al di fuori della loro attività principale in Giappone, la NERV ha anche operazioni negli Stati Uniti,
+        in Germania e forse in altri paesi.</p>
+
+      <p> Per quanto riguarda il mondo, la NERV è sotto il controllo delle Nazioni Unite ma la verità non è così
+        semplice.
+        In realtà, l'oscura organizzazione SEELE ha il controllo delle Nazioni Unite e, come tale, è anche supervisore
+        diretto della NERV.
+        Nonostante questa svista, operano ancora principalmente come organizzazione indipendente con SEELE
+        come principale fonte di finanziamento.</p>
+
+      <p> <strong>A. Informazioni rilasciate pubblicamente</strong> </p>
+
+      <p>Un’agenzia speciale sotto la diretta supervisione delle Nazioni Unite. I suoi obiettivi sono di investigare,
+        studiare ed eliminare gli Angeli.
+        Il quartier generale della Nerv si trova a Neo Tokyo-3, la prima e la seconda divisione si trovano in America, e
+        la
+        terza divisione si trova in Germania.</p>
+
+
+      <p><strong>B. Informazioni generalmente risapute</strong></p>
+
+      <p> Le relazioni tra il governo e la Nerv lasciano molto a desiderare, in quanto il governo ritiene che la Nerv
+        sia
+        responsabile della venuta degli Angeli.
+        Il Comitato per il Perfezionamento dell’Uomo, una piccola organizzazione interna alle Nazioni Unite, è
+        l’autorità
+        competente che controlla il budget della Nerv.</p>
+
+
+      <p> <strong>C. Informazioni confidenziali</strong></p>
+
+      <p> Uno degli obiettivi della Nerv è di annientare gli Angeli, ma la Nerv mira anche all’evoluzione dell’umanità -
+        in
+        altre parole, il Sentiero verso Dio.
+        Gli Evangelion sono la chiave per il raggiungimento di entrambi gli obiettivi.</p>
+
+
+      <p><strong>D. Informazioni approfondite</strong></p>
+      <p> Il quartier generale della Nerv è stato costruito all’interno della Luna Nera, in cui giace Lilith. Gli Angeli
+        diretti verso il quartier generale
+        della Nerv tentano di entrare in contatto con Lilith,
+        il gigante bianco custodito nel Terminal Dogma. Essi stavano cercando Lilith, non Adam, fin dall’inizio.</p>
+
+
+    </div>
+  </div>
+
+  <div class="testopiccolo" style="margin-top: 20px;">
+    <div class="container">
+      <p>Di seguito trovi tutte le informazioni sui massimi componenti della Nerv.</p>
+
+    </div>
+
+
+  </div>
+
+  <!--COMPONENTI DELLA NERV-->
+
+  <div id="gendo" class="testomedio" style="margin-top: 50px;">
+    Comandante Gendo Ikari
+    <hr>
+  </div>
+
+  <div style="margin-top: 50px;">
+    <center><img src="immagini/gendoikari.png" alt="GendoIkari" width="450px"></center>
+  </div>
+
+  <!--GENDO IKARI-->
+
+
+
+  <div class="testopiccolo container " style="margin-top: 50px;">
+
+    <ul>
+      <li>Nome: Gendo</li>
+      <li>Cognome: Ikari</li>
+      <li>Nato il: 29/04/67</li>
+      <li>imparentato con: Shinji Ikari/Yui Ikari</li>
+    </ul>
+
+
+    <div class="container" style="margin-top: 50px;">
+      <p> Gendō è il comandante supremo dell'agenzia speciale Nerv,
+        deputata allo studio e all'annientamento di una serie di misteriosi nemici del genere umano chiamati angeli.</p>
+
+
+      <p> <strong>A. Informazioni rilasciate pubblicamente</strong></p>
+
+      <p> Comandante in capo della Nerv e padre di Shinji Ikari. È un uomo dalla personalità fredda, disposto a usare
+        qualsiasi mezzo necessario per raggiungere i propri scopi.
+        I suoi sottoposti ritengono piuttosto difficile relazionarsi con lui.</p>
+
+      <p> <strong>B. Informazioni generalmente risapute</strong></p>
+
+      <p> Gendo ha lavorato per l’agenzia esistente in precedenza, il Gehirn, nel ruolo di capo del Laboratorio per
+        l’Evoluzione Artificiale.
+        Impiega la sua capacità di manipolare le informazioni e di nascondere le proprie azioni al fine di acquisire
+        attivamente fondi per l’amministrazione della Nerv.</p>
+
+      <p> <strong>C. Informazioni confidenziali</strong></p>
+
+      <p>Gendo ha sposato Yui Ikari, che aveva connessioni con la Seele, affinchè potesse diventarne egli stesso un
+        membro.
+        Ha occupato incarichi consecutivi come Direttore delle Operazioni (tra le altre cose) del Progetto E, del
+        Progetto
+        di Perfezionamento dell’Uomo e della Nerv.
+        Non molto tempo dopo esser diventato un membro della Seele, Gendo partì per il Polo Sud come consulente per il
+        Team
+        di Ricerca Katsuragi.</p>
+
+      <p> <strong>D. Informazioni approfondite</strong></p>
+
+      <p> Gli obiettivi di Gendo, come quelli della Seele, consistono nella distruzione
+        degli Angeli e nel Progetto di Perfezionamento dell’Uomo - ma per lui ciò significa riunirsi con la moglie
+        deceduta,
+        Yui.
+        Gendo agisce in modo tale da non destare sospetti. La Seele lo tiene sotto stretta osservazione e lo pone sotto
+        minaccia se necessario.</p>
+    </div>
+  </div>
+
+
+
+  <!--KOZO-->
+
+  <div id="kozo" class="testomedio">
+    Kōzō Fuyutsuki
+    <hr>
+  </div>
+
+  <div style="margin-top: 50px;">
+    <center> <img src="immagini/Kozo Fuyutsuki.jpeg" alt="Kozo" width="450px"></center>
+  </div>
+
+
+
+
+
+  <div class="testopiccolo container " style="margin-top: 50px;">
+
+    <ul>
+      <li>Nome: Kōzō </li>
+      <li>Cognome: Fuyutsuki </li>
+      <li>Nato il: 4/09/56</li>
+    </ul>
+
+    <div class=" container" style="margin-top: 50px;">
+      <p> È il secondo in comando del quartier generale della NERV eil braccio destro di Gendo Ikari.
+        In qualità di vice comandante della NERV , Fuyutsuki prende spesso il comando delle situazioni alla base ogni
+        volta
+        che Gendo è via per lavoro.
+        Gendo tende anche a scaricare il lavoro più banale, come riunioni del consiglio comunale, scartoffie e simili,
+        su
+        Fuyutsuki.</p>
+    </div>
+  </div>
+
+
+
+
+  <div class="testomedio" style="margin-top: 50px;">
+    Biografia
+    <hr>
+  </div>
+
+
+
+  <div class="testopiccolo " style="margin-top: 50px;">
+
+    <div class="container">
+      <p>Prima del Second Impact, Fuyutsuki era un professore di biologia metafisica all'Università di Kyoto. Mentre era
+        lì,
+        ha incontrato il giovane studente di bioingegneria Yui Ikari ed è diventato il suo "sensei". L'esatta natura
+        della
+        loro relazione accademica è sconosciuta,
+        sebbene fossero vicini e trascorressero del tempo insieme fuori dal campus. Fuyutsuki è stato colpito da
+        "Yui-kun"
+        sin dall'inizio,
+        anche se l'ha tenuto interamente per sé.</p>
+
+      <p>Non molto tempo dopo, un uomo di nome Gendo Rokubungi, che era detenuto presso il dipartimento di polizia della
+        prefettura di
+        Kyoto dopo una rissa in un bar, chiese di essere rilasciato sotto la custodia di Fuyutsuki. Ha obbedito, anche
+        se ha
+        trovato Rokubungi di cattivo gusto.
+        Yui in seguito ha presentato Gendo a Fuyutsuki in precedenza,
+        e poi, durante un'escursione, ha rivelato che in realtà stava uscendo con lui, una notizia che ha lasciato il
+        suo
+        sensei
+        visibilmente sconcertato nonostante gli sforzi per nascondere la propria reazione.</p>
+    </div>
+
+  </div>
+
+
+
+  <!--MISATO-->
+
+  <div id="misato" class="testomedio" style="margin-top: 50px;">
+    Misato Katsuragi
+    <hr>
+  </div>
+
+
+  <div style="margin-top: 50px;">
+    <center> <img src="immagini/misato.jpg" alt="Kozo" width="450px"></center>
+  </div>
+
+
+
+
+
+  <div class="testopiccolo container">
+
+    <ul>
+      <li>Nome: Misato</li>
+      <li>Cognome: Katsuragi</li>
+      <li>Nata il: 8/12/86</li>
+    </ul>
+    <div class="container" style="margin-top: 50px;">
+      È la direttrice operativa della NERV, inizialmente con il grado di capitano; in seguito viene promossa a maggiore.
+
+      I suoi compiti alla NERV includono agire come comandante sul campo per i piloti dell'Eva, impartire ordini e
+      trasmettere strategie
+      di battaglia, nonché elaborare input da Ritsuko Akagi e dai tecnici che monitorano gli Eva.
+      Si occupa anche di molti aspetti burocratici delle operazioni della NERV.
+    </div>
+  </div>
+
+
+
+  <div class="testomedio" style="margin-top: 50px;">
+    Biografia
+    <hr>
+  </div>
+
+
+  <div class="testopiccolo container">
+
+    <div class="container">
+      <p>Come rivelato in un flashback, quando Misato aveva 14 anni, accompagnò il Dr. Katsuragi (il leader della
+        spedizione
+        Katsuragi e
+        padre di Misato) in Antartide e rimase gravemente ferita all'inizio del Second Impact, ma suo padre la mise in
+        una
+        capsula protettiva
+        (simile a un Entry Plug ) appena prima di essere ucciso.</p>
+
+      <p>La capsula le ha salvato la vita, ma le ferite le hanno lasciato una
+        grossa cicatrice sul petto. Un altro flashback rivela che era a bordo della nave che portò Kōzō Fuyutsuki e
+        Gendo
+        Ikari alle
+        rovine dell'Antartide due anni dopo il Second Impact.</p>
+
+      <p>Dopo averla vista nella sua stanza, a Fuyutsuki fu detto che non aveva parlato dall'incidente.
+        Il suo mutismo è scomparso quando ha iniziato a frequentare il college ed è diventata più socievole e
+        loquace, tanto che Ritsuko, mentre ricordava la sua amicizia con Misato e Ryoji Kaji in quel momento, pensava
+        che
+        Misato stesse
+        tentando di "recuperare il tempo perduto."</p>
+    </div>
+  </div>
+
+
+
+  <!--RITSUKO-->
+
+  <div id="ritsuko" class="testomedio" style="margin-top: 50px;">
+    Ritsuko Akagi
+    <hr>
+  </div>
+
+
+  <div style="margin-top: 50px;">
+    <center><img src="immagini/Ritsuko-Akagi-Neon-Genesis-Evangelion-Capture-560x315.webp" alt="Kozo" width="450px">
+    </center>
+  </div>
+
+  <div class="testopiccolo container" style="margin-top: 50px;">
+
+
+    <ul>
+      <li>Nome: Ritsuko</li>
+      <li>Cognome: Akagi</li>
+      <li>Nata il: 11/11/85</li>
+    </ul>
+
+    <div class="container">
+      <p>La dottoressa Ritsuko Akagi è la scienziata capo della NERV ed è fortemente coinvolta nelle
+        riparazioni e nella manutenzione delle difese di Tokyo-3 contro gli Angeli, in particolare gli Eva.</p>
+
+      <p> È la figlia di Naoko Akagi, la sviluppatrice del sistema di supercomputer Magi che controlla la NERV. In molti
+        modi,
+
+        Ritsuko vive all'ombra di sua madre,
+        che ammira e disprezza. Naoko era la scienziata capo che lavorava al progetto
+        Evangelion prima della sua morte, e Ritsuko sta continuando il lavoro iniziato da sua madre con gli Eva, oltre a
+        continuare lo sviluppo del sistema di supercomputer Magi.
+        I flashback di un'adolescente Ritsuko rivelano che è una bruna naturale,
+        proprio come sua madre.</p>
+    </div>
+  </div>
+
+
+
+  <div class="testomedio" style="margin-top: 50px;">
+    Biografia
+    <hr>
+  </div>
+
+
+
+  <div class="testopiccolo container">
+
+    <div class="container">
+      <p>Per la maggior parte della serie, Ritsuko all'inizio sembra avere una buona amicizia con Misato, prendendola
+        occasionalmente
+        in giro per i suoi piccoli difetti.
+        Ma Ritsuko evita anche di parlare degli aspetti personali ed emotivi della propria vita, e sotto stress,
+        le due donne si allontanano sempre di più invece di confidarsi l'una con l'altra, a causa di alcune differenze
+        etiche e Ritsuko
+        sa di più su quello che sta succedendo ma si rifiuta di farlo. condividere queste informazioni con Misato.</p>
+
+      <p> Ritsuko più giovane con i capelli non tinti, dall'episodio 21
+        Ritsuko è stata segretamente coinvolta in una relazione sessuale con Gendo Ikari, che era stata con sua madre
+        prima.
+        Oltre a "condividere" lo stesso uomo,
+        i due Akagi hanno manifestato entrambi comportamenti distruttivi nei confronti della figura di Rei Ayanami,
+        nonostante un periodo di iniziale controllo emotivo. Nel caso di Ritsuko,
+        questo era chiaramente dovuto alla gelosia nei confronti di Rei, e potrebbe essere stato così anche con Naoko.
+      </p>
+
+      <p>Il particolare attacco di Ritsuko a Rei potrebbeessere stato innescato
+        quando è stata mandata al posto di Rei da Seele
+        e messa nuda davanti a loro. Per rappresaglia Ritsuko distrusse il Dummy System e con esso gli stupidi cloni di
+        Rei,
+        insistendo sul fatto che ciò che aveva veramente ucciso era Rei, la sua "rivale".</p>
+
+      <p>I parallelismi tra le relazioni di Gendo con entrambe le donne Akagi sono ironici, dato che Ritsuko cerca di
+        prendere le distanze da sua madre,
+        ovviamente tingendosi i capelli di biondo per distinguersi da Naoko,
+        poiché il suo colore naturale di capelli è molto simile.</p>
+    </div>
+  </div>
+
+
+
+  <!--Ryōji Kaji-->
+
+  <div id="ryoji" class="testomedio" style="margin-top: 50px;">
+    Ryōji Kaji
+    <hr>
+  </div>
+
+
+  <div style="margin-top: 50px;">
+    <center><img src="immagini/kaji.webp" alt="Kozo" width="450px"></center>
+  </div>
+
+
+  <div class="testopiccolo container">
+
+    <ul>
+      <li>Nome: Ryōji</li>
+      <li>Cognome: Kaji</li>
+      <li>Nato il: 17/06/85</li>
+    </ul>
+  </div>
+
+
+
+  <div class="testomedio">
+    Biografia
+    <hr>
+  </div>
+
+
+  <div class="testopiccolo container">
+
+    <div class="container">
+      <p> Kaji sembra essere un triplo agente, che lavora come ispettore speciale per la NERV, mentre indaga
+        segretamente
+        sull'organizzazione per il Ministero dell'Interno
+        giapponese, e a volte sembra agire come una zampa di gatto sia a favore che contro Gendo Ikari e SEELE.</p>
+
+      <p> Inoltre, sembra mantenere motivazioni personali al di là della lealtà a qualsiasi organizzazione e
+        parla spesso del suo desiderio di "trovare la verità".</p>
+
+      <p>Si può dire che Kaji abbia il pollice verde, poiché coltiva un campo di angurie vicino al quartier generale
+        della
+        NERV</p>
+
+      <p> Kaji e Misato Katsuragi erano amanti durante il college, ma si erano lasciati da tempo all'inizio della serie
+        e non
+        si vedono più
+        finché lei non vola sulla flotta delle Nazioni Unite che traghetta l'Unità- 02 e Asuka Langley Sohryu in
+        Giappone.</p>
+    </div>
+
+
+  </div>
+
+
+
+
+  <!--Shigeru Aoba-->
+
+  <div id="shigeru" class="testomedio" style="margin-top: 50px;">
+    Shigeru Aoba
+    <hr>
+  </div>
+
+
+  <div style="margin-top: 50px;">
+    <center><img src="immagini/Shigeru Aoba.jpg" alt="Kozo" width="450px"></center>
+  </div>
+
+
+  <div class="testopiccolo container">
+
+    <div class="coitainer">
+      <ul>
+        <li>Nome: Shigeru</li>
+        <li>Cognome: Aoba</li>
+        <li>Nato il: 5/05/??</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div class="testomedio">
+    Biografia
+    <hr>
+  </div>
+
+
+  <div class="testopiccolo container">
+
+    <div class="container">
+      <p>Aoba è un appassionato trituratore di chitarre e viene visto portare una custodia per chitarra quando è nella
+        vita
+        civile, come nell'episodio 11.
+        Anche nel quartier generale della NERV, Aoba fa a pezzi la chitarra aerea quando non è in servizio oltre a
+        leggere
+        riviste di chitarra.</p>
+
+      <p>Aoba è un po 'nichilista e un po' cinico, si fa beffe dell'assoluta fiducia di Maya Ibuki nella tecnologia
+        dell'epoca, vista nell'episodio 11, e non ha ripensamenti
+        sullo sparare ai soldati della JSSDF nell'episodio 25 '. Ma va d'accordo con i suoi colleghi.</p>
+    </div>
+
+  </div>
+
+
+
+  <!--Makoto Hyūga-->
+
+  <div id="makoto" class="testomedio" style="margin-top: 50px;">
+    Makoto Hyūga
+    <hr>
+  </div>
+
+
+  <div style="margin-top: 50px;">
+    <center><img src="immagini/Makoto Hyuga.webp" alt="Kozo" width="450px"></center>
+  </div>
+
+
+  <div class="testopiccolo container">
+
+    <div class="container">
+      <li>Nome: Makoto</li>
+      <li>Cognome: Hyūga</li>
+      <li>Nato il: 13/02/??</li>
+    </div>
+  </div>
+
+
+
+  <div class="testomedio">
+    Biografia
+    <hr>
+  </div>
+
+
+  <div class="testopiccolo container">
+
+    <div class="container">
+      <p>Hyuga all'inizio dà l'impressione di essere una specie di otaku, che legge manga durante la pausa, ma è un
+        tecnico
+        altamente qualificato.</p>
+
+      <p>La sua rapidità di pensiero e il suo coraggio aiutano a salvare il quartier generale della NERV dall'attacco di
+        Matarael, e funge da spia per Misato, aiutandola a ottenere informazioni sulle macchinazioni della NERV.</p>
+
+      <p>La vera portata dei suoi sentimenti per Misato è mostrata in The End of Evangelion quando Rei/Lilith assume la
+        forma
+        di Misato
+        durante Instrumentality e lo bacia appassionatamente; il suo corpo ritorna a LCL.</p>
+    </div>
+
+  </div>
+
+
+
+  <!--Maya Ibuki-->
+
+  <div id="maya" class="testomedio" style="margin-top: 50px;">
+    Maya Ibuki
+    <hr>
+  </div>
+
+
+  <div style="margin-top: 50px;">
+    <center><img src="immagini/Maya Ibuki.jpg" alt="Kozo" width="450px"></center>
+  </div>
+
+
+  <div class="testopiccolo container">
+
+    <div class="container">
+      <li>Nome: Maya</li>
+      <li>Cognome: Ibuki</li>
+      <li>Nato il: 24/07/91</li>
+    </div>
+  </div>
+
+
+
+  <div class="testomedio">
+    Biografia
+    <hr>
+  </div>
+
+  <div class="testopiccolo container">
+
+    <div class="container">
+      <p>Maya è una giovane donna ottimista e allegra anche se sensibile, che spesso nasconde gli occhi o ha conati di
+        vomito
+        durante le battaglie più violente di Eva
+        a causa del fatto che ha paura del sangue visibile o degli organi interni.</p>
+
+
+      <p>Maya ha anche dimostrato di avere una natura fedele e fiduciosa. È in soggezione per i progressi tecnologici
+        raggiunti dalla società attuale.</p>
+
+      <p>In particolare, che questo avanzamento sia seguito al Second Impact 15 anni fa: a differenza dei piloti di Eva
+        di 14
+        anni, Maya
+        è abbastanza grande da essere una bambina al tempo del Second Impact e quindi, a differenza di loro,
+        probabilmente
+        ricorda di essere
+        dovuta crescere attraverso il conseguente global caos in cui la civiltà umana
+        si è dolorosamente ricostruita, in una società che lotta per nutrire la sua gente.</p>
+
+      <p>È possibile che Maya idealizzi la scienza e la tecnologia umana perché è ciò che alla fine ha salvato il mondo
+        in
+        cui è cresciuta dall'orlo del collasso.</p>
+    </div>
+
+  </div>
+
+
+
+  <!--FOOTER-->
+  <!-- 
+  <div style="margin-top: 50px;">
+    <div style="position: relative; height: 5px; background-color: rgb(250, 32, 8);"></div>
+
+    <div id="Footer"
+      style="background-color: rgb(36, 36, 36);  height: 200px; position:absolute; left: 100px; right: 0px;">
+
+      <a href="https://www.youtube.com/channel/UC8rQxh_mjGtKiBQJkixhYGQ" target="_self">
+        <img style=" width: 200px; bottom:50px; margin-left: 50px; " src="immagini/youtube-logo-hd-8.png "> </a>
+
+      <div style="font-family: Impact; font-size: 20px; color: whitesmoke;
+       margin-left: 115px; z-index: 9999; position: absolute; top: 110px;">
+        YouTube
+
+      </div>
+
+    </div>
+  </div> -->
+
+  <!--FOOTER-->
+  <div id="footer"
+    style="margin-top: 50px ;background-color: rgb(36, 36, 36); height: 200px; border-top: solid 10px; border-color:  rgb(250, 32, 8); ">
+
+    <div style="margin-left: 200px; margin-top: 50px;">
+      <a href="https://www.youtube.com/channel/UC8rQxh_mjGtKiBQJkixhYGQ">
+        <i class="fa-brands fa-youtube" style="color: #ff0000; font-size: 50px; margin-left: 5px;"></i>
+      </a>
+      <div style="font-family: Impact; font-size: 20px; color: whitesmoke;  margin-bottom: 100; ">
+        YouTube
+      </div>
+
+    </div>
+
+  </div>
+
+
+</body>
+
+<script src="lib.js"></script>
+
+</html>

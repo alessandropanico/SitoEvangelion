@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVANGELION</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+
+    <link rel="icon" type="image/png" href="./immagini/NERV_logo-PhotoRoom.png-PhotoRoom.png">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+
+   <!--VIDEO SFONDO BACKGROUND-->
+
+   <video autoplay muted loop id="myVideo">
+    <source src="red.mp4" type="video/mp4">
+</video>
+
+        <div>
+            <img src="immagini/5min.gif" style="width: 100%; height: 450px;">
+        </div>
+        <div style="background-color: rgb(19, 19, 19);
+          border-top: solid 10px; border-bottom: solid 10px ; border-color: rgb(250, 32, 8) ; z-index: 9999;">
+            <marquee style="font-size: 80px; font-family:Impact;
+            color: rgb(216, 64, 30);">
+                CAUTION 危険 - ANGEL ATTACK - CAUTION 危険 - ANGEL ATTACK - CAUTION 危険 - ANGEL ATTACK -
+            </marquee>
+        </div>
+
+
+
+
+        <!--NAVBAR-->
+        <div style=" bottom: 35px;">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+                style="height: 85px; padding-left: 20px; font-family: 'Times New Roman';">
+
+                <a style="font-size: 25px;color: rgb(216, 64, 30); text-decoration: none;"
+                    onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'"
+                    class="navbar-brand" href="index.html">HOME</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a style="font-size: 25px; color: rgb(216, 64, 30)" class="nav-link"
+                                href="Eva.html">EVANGELION<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-size: 25px;color: rgb(216, 64, 30)" class="nav-link"
+                                href="contatti.html">CONTATTI</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        <!--VIDEO SFONDO BACKGROUND-->
+
+        <video autoplay muted loop id="myVideo">
+            <source src="red.mp4" type="video/mp4">
+        </video>
+
+
+        <div class="testogrande2">
+            Unità Evangelion
+            <hr style="color:red; ">
+        </div>
+
+        <div class="testopiccolo2">
+
+            <p>Le macchine da combattimento umanoidi multifunzione Evangelion(unità EVA) sono automi da combattimento
+                antropomorfi
+                creati dall'uomo, che si pongono a metà tra l'umano e il divino; una sorta di evoluzione del concetto di
+                mecha.
+                Sono stati creati grazie agli studi di ingegneria genetica di Yui Ikari sponsorizzati dalla Seele,
+                l'organizzazione segreta che mira a portare a termine il Progetto per il Perfezionamento dell'Uomo.</p>
+
+        </div>
+
+        <div class="testomedio2">
+            Curiosità
+            <hr style="color:red; ">
+        </div>
+
+
+        <div class="testopiccolo2">
+            <p> Sono entità organiche: possiedono ossa, muscoli e sistema nervoso; la loro composizione è il risultato
+                di
+
+                esperimenti effettuati su Lilith e Adam (i primi angeli), come quello svolto dalla Spedizione Katsuragi
+                in
+                Antartide (l'origine del Second Impact).</p>
+        </div>
+
+
+
+
+        <!--SELECT-->
+
+        <select style="font-family: Impact; color:rgb(216, 64, 30); 
+        background-color:black; opacity: 80%; padding-left: 20px; width: 1000px; margin-left: 20px; margin-top: 50px;"
+            class="form-select  " aria-label="Default select example; " id="select" onchange="immagine()">
+
+            <option selected>Seleziona Evangelion</option>
+
+            <option value="eva01">Unità Evangelion-01</option>
+            <option value="eva02">Unità Evangelion-02</option>
+            <option value="eva00">Unità Evangelion-00</option>
+
+        </select>
+
+
+
+        <!--IMMAGINI-->
+
+        <div id="eva01" style="display:none; margin-top: 50px; ">
+            <center> <img src="./immagini/eva01.jpg" class="img-fluid img-filter" style="width: 400px; "> </center>
+
+
+            <div class="testopiccolo3" style=" position: relative; top:30px;">
+
+                <p> Unità Evangelion-01 è, come tutti gli Evangelion, un gigante umano artificiale (Jinzo ningen [ ? ])
+                    con
+                    la pelle marrone.
+                    Ha una bocca simile a quella di un essere umano e due occhi verdi rotondi.
+                    Il viso ha anche quattro piccole narici e sangue rosso. </p>
+
+                <p>Il suo vero aspetto è nascosto sotto un'armatura, chiamata Type-B Gear, che serve anche a limitare la
+                    sua vera forza.
+                    L'armatura dell'Unità-01 è un modello prototipo, e quindi diversa dai modelli seguenti.
+                    Questo è costituito da due grandi placche bluastre che coprono i pettorali, oltre a tre pezzi
+                    triangolari sull'addome
+                    fino all'inguine. L'armatura è prevalentemente viola con strisce verdi sulle braccia e dettagli in
+                    nero.
+                    La sua gorgiera è composta da più pezzi di colore giallastro/arancione.
+                    Il suo elemento più caratteristico è senza dubbio l'elmo, unico per ogni Eva, con il suo corno
+                    prominente e il suo "collare", che evoca vagamente quello di un oni di corno singolo.</p>
+
+                <p>L'armatura aggiunge anche molti altri elementi necessari per il combattimento e il pilotaggio.
+                    Innanzitutto, c'è il sistema per accogliere l'Entry Plug e il cavo ombelicale nella parte posteriore
+                    dell'Evangelion sotto il collo.
+                    Per il combattimento, l'armatura ha piloni sulle spalle che possono essere aperti per riporre e
+                    rimuovere il coltello progressivo.</p>
+
+            </div>
+        </div>
+
+        </div>
+
+
+        <div id="eva02" style="display:none;margin-top: 50px;">
+
+            <center><img src="./immagini/eva02.png" class="img-fluid img-filter" style=" width: 400px; "></center>
+
+
+
+            <div class="testopiccolo3" style=" position: relative; top:30px;">
+
+                <p>L'Unità-02 è un modello di produzione Evangelion e utilizza la stessa disposizione dell'armatura
+                    delle
+                    successive Unità-03 e Unità-04, insieme all'Unità-00 potenziata.
+                    Tutti gli Evangelion che utilizzano questa disposizione hanno lo stesso design del pilone della
+                    spalla e
+                    cinque piastre di armatura a forma di V sul busto.</p>
+
+                <p>Questo Evangelion è unico per avere sangue viola-bluastro, pelle grigio-blu e quattro occhi.
+                    (Tutti gli altri Evangelion possiedono sangue rosso e, per tutti gli
+                    Evangelion non di produzione di massa, inclusa l'Unità-00, due occhi e la pelle marrone sono lo
+                    standard).
+                    Gli occhi sono di un colore arancione fuoco uniforme.</p>
+
+                <p>Sebbene l'Unità-02 abbia una mascella e una bocca, quando sono corazzate queste non possono aprirsi
+                    nella stessa misura di quelle dell'Unità-01,
+                    dell'Unità-03 e dell'Unità-04, quindi non c'è un pezzo di mascella incernierato nell'elmo.
+                    Invece, l'elmo ha sezioni mobili che possono spostarsi per coprire o scoprire gli occhi
+                    dell'Evangelion.
+                    Quattro prominenti fori per le narici si trovano nella parte sporgente della fronte dell'elmo.</p>
+
+            </div>
+        </div>
+        </div>
+
+
+
+        <div id="eva00" style="display:none;margin-top: 50px;">
+
+            <center> <img src="./immagini/Eva00.jpeg" class="img-fluid img-filter" style=" width: 400px; " alt=""
+                    srcset=""></center>
+
+
+
+
+
+
+            <div class="testopiccolo3" style=" position: relative; top:30px;">
+
+                <p> L'Unità-00 è il prototipo, il primo Evangelion di successo, ed è pilotato dal First Child, Rei
+                    Ayanami.
+                    Il design della testa è simile a quello dei precedenti tentativi falliti, ma con una sola
+                    telecamera.
+                    Ci sono due cupole sulla sommità della testa, una bianca e una verde trasparente; la loro funzione
+                    (se esiste) non viene mai rivelata.
+                    L'Unità-00 è l'unico degli Evangelion originali che non viene mai visto senza la sua armatura o
+                    aprendo la bocca; quindi l'aspetto del suo corpo organico è sconosciuto.</p>
+
+                <p>L'Unità-00 era inizialmente colorata di arancione come i precedenti prototipi, ma la sua armatura è
+                    stata danneggiata irreparabilmente dal raggio di particelle dell'Angelo Ramiel.
+                    Le successive riparazioni e aggiornamenti includevano la corazzatura blu oltre ad altre modifiche
+                    apportate per renderla più adatta alle condizioni di combattimento. </p>
+
+            </div>
+
+        </div>
+
+        </div>
+
+        <div class="d-flex justify-content-center" style="margin-top: 100px;">
+            <div
+                style="background-color: rgb(19, 19, 19); width: 100%; border-top: solid 3px; border-bottom: solid 3px ; border-color: rgb(250, 32, 8) ;">
+                <marquee style="font-family: Impact, sans-serif; color: rgb(216, 64, 30); font-size: 50px; "
+                    id="selezionare">
+                    SELEZIONARE UNITA' EVANGELION - SELEZIONARE UNITA' EVANGELION - SELEZIONARE UNITA' EVANGELION -
+                    SELEZIONARE UNITA' EVANGELION
+                </marquee>
+            </div>
+        </div>
+
+        <div id="nerv" class="testomedio2" style="margin-top: 100px;">
+            Conta su di noi
+            <hr style="color:red; ">
+        </div>
+
+
+        <div style="margin-top: 50px;">
+            <center>
+                <img src="immagini/neon-genesis-evangelion-eva-unit-01-eva-unit-02-eva-unit-00-wallpaper-preview.jpg"
+                    width="800px" height="auto">
+            </center>
+        </div>
+
+
+        <div class="testopiccolo2" style="margin-top: 50px;">
+
+            <p>Questo è stato il mio primissimo sito realizzato. Ho anche "aggiustato un po'" ma sapere com'è</p>
+
+
+            <div style="font-family: Arial;">
+                N E O N &nbsp; G E N E S I S &nbsp; E V A N G E L I O N
+            </div>
+
+        </div>
+
+
+
+        <!--FOOTER-->
+
+        <div id="footer"
+            style="margin-top: 50px ;background-color: rgb(36, 36, 36); height: 200px; border-top: solid 10px; border-color:  rgb(250, 32, 8); ">
+
+            <div style="margin-left: 50px; margin-top: 50px;">
+                <a href="https://www.youtube.com/channel/UC8rQxh_mjGtKiBQJkixhYGQ">
+                    <i class="fa-brands fa-youtube" style="color: #ff0000; font-size: 50px; margin-left: 5px;"></i>
+                </a>
+                <div style="font-family: Impact; font-size: 20px; color: whitesmoke;  margin-bottom: 100px; ">
+                    YouTube
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+
+    <script src="lib.js"></script>
+
+</html>

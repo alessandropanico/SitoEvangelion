@@ -1,0 +1,100 @@
+.testopiccolo
+{
+    font-family:'Times New Roman'; color:whitesmoke; font-size: 20px; text-align: justify; margin-left: 170px;
+}
+
+.testopiccolo2
+{
+    font-family:'Times New Roman'; color:whitesmoke; font-size: 20px; text-align: justify; margin-left: 20px;
+}
+
+
+.testopiccolo3
+{
+    font-family:'Times New Roman'; color:whitesmoke; font-size: 20px; text-align: justify; margin-left: 20px
+}
+
+
+.testomedio
+{
+    font-family:'Times New Roman'; color: rgb(216, 64, 30); font-size: 45px; margin-left: 200px
+}
+
+.testomedio2
+{
+    font-family:'Times New Roman'; color: rgb(216, 64, 30); font-size: 45px; margin-left: 20px
+}
+
+
+
+.testogrande
+{
+    font-family: 'Times New Roman';color: rgb(216, 64, 30); font-size: 90px; margin-left: 200px 
+}
+
+.testogrande2
+{
+    font-family: 'Times New Roman';color: rgb(216, 64, 30); font-size: 90px; margin-left: 20px 
+}
+
+.navbar-nav>li>a:hover {
+    text-decoration: underline;
+  }
+
+.no-underline 
+{
+    text-decoration: none;
+ }
+
+ a:hover {
+    
+    text-decoration: underline;
+    color: red;
+  
+  }
+
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  
+
+  .img-filter {
+    filter: saturate(100%) contrast(100%) brightness(100%);
+  }
+
+label
+{
+    color: rgb(216, 64, 30);
+    font-family: 'Times New Roman';
+}
+
+
+hr
+{
+    color:red;
+}
+
+
+.sidebar
+{
+  background-color: rgb(19, 19, 19);
+  border: solid 2px rgb(216, 64, 30);
+  padding: 25px;
+  height: 100%;
+  width: 170px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 9999;
+  color: rgb(216, 64, 30);
+  font-size: 15px;
+  font-family: 'IMPACT';
+}
+
+
